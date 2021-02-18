@@ -1,4 +1,4 @@
-# just-mono
+# Just Mono
 A minimalistic Anki addon for making text monospace.
 
 They have superscript and subscript, but not monospace? This addon fixes that.

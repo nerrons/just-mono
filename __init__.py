@@ -12,7 +12,8 @@ def format_key(k):
     return QKeySequence(k).toString(QKeySequence.NativeText)
 
 def wrap_mono(editor):
-    editor.web.eval("wrap('<code>', '</code>')")
+    class_string = 'class="just-mono"'
+    editor.web.eval(f"wrap('<code {class_string}>', '</code>')")
 
 def setupEditorButtonsFilter(buttons, editor):
     key = get_key()

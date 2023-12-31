@@ -9,7 +9,7 @@ def get_key():
     return conf.get("hotkey", "") if conf else ""
 
 def format_key(k):
-    return QKeySequence(k).toString(QKeySequence.NativeText)
+    return QKeySequence(k).toString(QKeySequence.SequenceFormat.NativeText)
 
 def wrap_mono(editor):
     class_string = 'class="just-mono"'
